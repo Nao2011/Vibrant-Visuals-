@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>マインクラフト風ギャラリー</title>
+  <link rel="icon" href="https://yt3.googleusercontent.com/Cgs5M1z084k9xZ3GjtG3ENjoQL9peI4koy-IRnPBT5LAntgrtyyLAf_Fa0NO4HIVw6FyKoJaPQc=s900-c-k-c0x00ffffff-no-rj" type="image/png" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body {
+      font-family: 'Press Start 2P', cursive, monospace;
+      background: #222;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    img.header-img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .slider {
+      max-width: 100%;
+      width: 600px;
+      overflow: hidden;
+      border-radius: 6px;
+      box-shadow: 0 0 12px #000;
+      position: relative;
+      background: #111;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .slides img {
+      width: 600px;
+      flex-shrink: 0;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: linear-gradient(145deg, #4a752c, #37691c);
+      border: 3px solid #7aba3e;
+      box-shadow: inset 0 0 0 2px #a6d56c, 3px 3px 0 #294915;
+      padding: 10px 16px;
+      cursor: pointer;
+      font-size: 20px;
+      color: #dbeea7;
+      user-select: none;
+      border-radius: 0;
+      text-shadow: 1px 1px 0 #294915, 2px 2px 0 #1f3a0f;
+      font-weight: bold;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav-btn:hover {
+      background: linear-gradient(145deg, #7aba3e, #4a752c);
+      color: #f3ffd2;
+      box-shadow: inset 0 0 5px 2px #c6ff77, 3px 3px 0 #294915;
+    }
+
+    #prev {
+      left: 8px;
+    }
+
+    #next {
+      right: 8px;
+    }
+
+    .caption {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.5;
+      max-width: 600px;
+    }
+
+    .caption h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #7aba3e;
+      text-shadow: 1px 1px 0 #294915;
+    }
+
+    .caption a {
+      color: #a6d56c;
+      text-decoration: underline;
+    }
+
+    .caption a:hover {
+      color: #dbeea7;
+    }
+
+    @media (max-width: 640px) {
+      .nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+      }
+
+      .caption {
+        font-size: 12px;
+      }
+
+      .caption h2 {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img class="header-img" src="https://i.ytimg.com/vi/tq2gK2Yyylc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCIgLBE_IP_p67h5zFMxMKAwhkvkg" alt="ヘッダー画像" />
+
+  <div class="slider">
+    <div class="slides" id="slides">
+      <img src="https://asset.watch.impress.co.jp/img/wf/docs/1672/372/01_l.png" alt="画像1" />
+      <img src="https://pub-f354ec240bea480db7320bd0e29d972e.r2.dev/sites/10/2025/03/MCL_Broll_CherryGrove_AG_01-9cd4fdffedfc1f0c5c8c.jpg" alt="画像2" />
+      <img src="https://dev.ua/storage/images/44/18/94/74/derived/8be846c35a767d90751c1ebc17767602.jpg" alt="画像3" />
+      <img src="https://tsukishima-ss.net/wp_241014/wp-content/uploads/2025/05/IMG_0060-1024x473.png" alt="画像4" />
+    </div>
+    <button class="nav-btn" id="prev">&#10094;</button>
+    <button class="nav-btn" id="next">&#10095;</button>
+  </div>
+
+  <div class="caption">
+    <h2>Vibrant Visuals（バイブラントビジュアルズ）</h2>
+    <p>
+      『マインクラフト』のビジュアルを刷新する「Vibrant Visuals（バイブラントビジュアルズ）」は、ゲームプレイに影響を与えることなく、グラフィックを強化するアップデートです。<br>
+      このアップデートにより、無限に広がる雲、反射する水面、太陽の光が作り出す影、ボリューメトリック・ライティング（立体的な光の表現）、強化されたテクスチャなど、さまざまなビジュアル要素が追加され、ゲームの世界がより美しく、リアルに感じられるようになります。<br>
+      これらのビジュアル強化は、ゲームプレイには影響を与えません。つまり、既存のワールドでもVibrant Visualsを有効にしてプレイすることができ、フレンドと一緒に遊ぶ際にも問題ありません。<br>
+      現在、このアップデートはMinecraft: Bedrock Editionの対応デバイスで利用可能で、将来的にはJava Editionにも導入される予定です。<br>
+      詳細については公式サイトをご覧ください。<br>
+      <a href="https://www.minecraft.net/ja-jp/vibrant-visuals-update" target="_blank" rel="noopener noreferrer">バイブラントビジュアルズ：強化されたグラフィックで、これまでにない Minecraft を体験してください</a>
+    </p>
+  </div>
+
+  <script>
+    const slides = document.getElementById('slides');
+    const images = slides.querySelectorAll('img');
+    const total = images.length;
+    let index = 0;
+
+    function showSlide(i) {
+      index = (i + total) % total;
+      slides.style.transform = `translateX(${-600 * index}px)`;
+    }
+
+    document.getElementById('next').addEventListener('click', () => {
+      showSlide(index + 1);
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+      showSlide(index - 1);
+    });
+
+    // 自動再生
+    setInterval(() => {
+      showSlide(index + 1);
+    }, 3000);
+  </script>
+
+</body>
+</html>
